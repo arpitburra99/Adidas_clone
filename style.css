@@ -1,0 +1,885 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: AdihausDIN, Helvetica, Arial, sans-serif;
+}
+/* ------ Section ------ */
+.section-1 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.offer-bar {
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+.offer-bar h2 {
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.bi-chevron-down {
+  font-size: 12px;
+  margin-left: 6px;
+}
+.log-in-bar {
+  background-color: white;
+  display: flex;
+  list-style: none;
+  align-items: end;
+  justify-content: end;
+  gap: 22px;
+  margin-right: 35px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.log-in-bar li {
+  font-size: 12px;
+}
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.logo img {
+  height: 65px;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 38%;
+  list-style: none;
+  margin-left: 210px;
+}
+.header li {
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.icons-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  cursor: pointer;
+}
+.icons-bar input {
+  padding: 8px;
+  background: #eceff1;
+  border: none;
+}
+.textinp::placeholder {
+  color: rgb(35, 35, 35);
+  font-size: 14px;
+  font-weight: 200;
+}
+.fa {
+  position: absolute;
+  left: 52%;
+  top: 7px;
+}
+.fa-solid {
+  font-size: 20px;
+}
+.offer-discount-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #6d8093;
+  padding: 40px 100px;
+  height: 400px;
+}
+.offer-discount-bar h1 {
+  font-size: 42px;
+  line-height: 42px;
+  color: white;
+}
+.product-offer-discount-bar h3 {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 10px;
+}
+.product-offer-box-section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 18px;
+}
+.product-offer-box {
+  background-color: #eceff1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 24%;
+  padding: 10px;
+  cursor: pointer;
+}
+.product-offer-box img {
+  height: 118px;
+}
+.product-offer-box a {
+  margin-top: 90px;
+  font-size: 13px;
+  color: black;
+  font-weight: 600;
+}
+.img-section-bcci {
+  background-image: url("./assets/bg-img-cricket.avif");
+  background-position: center;
+  background-size: cover;
+  min-height: 88vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+.img-section-bcci .a1 {
+  padding: 15px 38px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  margin-left: 135px;
+  border: 1px solid black;
+}
+.a1:hover {
+  background-color: #b5b4b4;
+}
+.fa-arrow-right-long {
+  margin-left: 6px;
+}
+.img-section-bcci .a2 {
+  padding: 15px 38px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  margin-left: 135px;
+  border: 1px solid black;
+}
+.a2:hover {
+  background-color: #b5b4b4;
+}
+#menu {
+  display: none;
+}
+#icons {
+  display: none;
+}
+
+/* ------ Section-2 ------ */
+
+.section-2 {
+  background-color: #ffffff;
+  min-height: 50vh;
+  /* padding: 70px 0; */
+  padding: 60px 0 50px 0;
+}
+.category-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 138px;
+  height: 230px;
+}
+.category-section h2 {
+  font-size: 32px;
+}
+.category-types-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-types-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-1 {
+  border-bottom: 1px solid black;
+  width: 30%;
+  line-height: 55px;
+}
+.category-1:hover {
+  border-bottom: 8px solid black;
+}
+.category-1 h1 {
+  font-size: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.product-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 138px;
+  margin-top: 95px;
+}
+.product-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.product-types {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+.product-1 img {
+  height: 450px;
+  cursor: pointer;
+}
+.product-1 h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+/* ------ Section-3 ------ */
+
+.shoes-product-section {
+  padding: 0 138px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  min-height: 56vh;
+}
+.shoes-product-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* overflow: auto; */
+  /* overflow: hidden; */
+}
+.shoes-product-section h2 {
+  font-size: 28px;
+}
+.shoes-product-section i {
+  font-size: 26px;
+}
+.shoe-img1 {
+  background-image: url("./assets/adidas_Originals_Samba_Shoes_1.avif");
+  background-position: center;
+  background-size: cover;
+  height: 285px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shoe-img1 i {
+  margin: 15px 0 0 245px;
+  font-size: 20px;
+}
+.shoe-img1 a {
+  background-color: white;
+  width: 26%;
+  margin-left: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.shoe-img1 a:hover {
+  margin-bottom: 5px;
+}
+.shoe-img2 {
+  background-image: url("./assets/Adifom_Superstar_Shoes_2.avif");
+  background-position: center;
+  background-size: cover;
+  height: 285px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shoe-img2 i {
+  margin: 15px 0 0 245px;
+  font-size: 20px;
+}
+.shoe-img2 a {
+  background-color: white;
+  width: 26%;
+  margin-left: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.shoe-img2 a:hover {
+  margin-bottom: 5px;
+}
+.shoe-img3 {
+  background-image: url("./assets/Superstar_XLG_Shoes_3.avif");
+  background-position: center;
+  background-size: cover;
+  height: 285px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shoe-img3 i {
+  margin: 15px 0 0 245px;
+  font-size: 20px;
+}
+.shoe-img3 a {
+  background-color: white;
+  width: 26%;
+  margin-left: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.shoe-img3 a:hover {
+  margin-bottom: 5px;
+}
+.shoe-img4 {
+  background-image: url("./assets/adidas_Originals_Samba_Shoes_4.avif");
+  background-position: center;
+  background-size: cover;
+  height: 285px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shoe-img4 i {
+  margin: 15px 0 0 245px;
+  font-size: 20px;
+}
+.shoe-img4 a {
+  background-color: white;
+  width: 26%;
+  margin-left: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.shoe-img4 a:hover {
+  margin-bottom: 5px;
+}
+.shoe-box-1 {
+  /* padding: 10px; */
+  line-height: 25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.shoe-box-1 p {
+  padding: 10px;
+}
+.shoe-box-1:hover {
+  border: 1px solid black;
+}
+
+/* ------ section-4 ------ */
+
+.shoes-cloth-product-section {
+  padding: 50px 138px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  min-height: 56vh;
+}
+.shoes-cloth-product-section h1 {
+  font-size: 40px;
+}
+.shoes-cloth-product-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.shoe-cloth-box-1 {
+  cursor: pointer;
+}
+.shoe-cloth-box-1 img {
+  height: 400px;
+}
+.shoe-cloth-box-1 span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 15px;
+}
+.shoe-cloth-box-1 h3 {
+  font-size: 16px;
+}
+.shoe-cloth-box-1 p {
+  font-size: 13px;
+  font-weight: 400;
+}
+.shoe-cloth-box-1 a {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.shoe-cloth-box-1 a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  width: 40%;
+}
+
+/* ------ Section-5 ------ */
+
+.slippers-shoes-product-section {
+  padding: 40px 138px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  min-height: 62vh;
+}
+.slippers-shoes-product-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* overflow: auto; */
+  /* overflow: hidden; */
+}
+.slippers-shoes-product-section h2 {
+  font-size: 38px;
+}
+.slippers-shoes-product-section i {
+  font-size: 26px;
+}
+.slippers-shoe-img1 {
+  background-image: url("./assets/slippers-1.avif");
+  background-position: center;
+  background-size: cover;
+  height: 285px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slippers-shoe-img1 i {
+  margin: 15px 0 0 245px;
+  font-size: 20px;
+}
+.slippers-shoe-img1 a {
+  background-color: white;
+  width: 26%;
+  margin-left: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.slippers-shoe-img1 a:hover {
+  margin-bottom: 5px;
+}
+.slippers-shoe-img2 {
+  background-image: url("./assets/slippers-2.avif");
+  background-position: center;
+  background-size: cover;
+  height: 285px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slippers-shoe-img2 i {
+  margin: 15px 0 0 245px;
+  font-size: 20px;
+}
+.slippers-shoe-img2 a {
+  background-color: white;
+  width: 26%;
+  margin-left: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.slippers-shoe-img2 a:hover {
+  margin-bottom: 5px;
+}
+.slippers-shoe-img3 {
+  background-image: url("./assets/slippers-3.avif");
+  background-position: center;
+  background-size: cover;
+  height: 285px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slippers-shoe-img3 i {
+  margin: 15px 0 0 245px;
+  font-size: 20px;
+}
+.slippers-shoe-img3 a {
+  background-color: white;
+  width: 26%;
+  margin-left: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.slippers-shoe-img3 a:hover {
+  margin-bottom: 5px;
+}
+.slippers-shoe-img4 {
+  background-image: url("./assets/slippers-4.avif");
+  background-position: center;
+  background-size: cover;
+  height: 285px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slippers-shoe-img4 i {
+  margin: 15px 0 0 245px;
+  font-size: 20px;
+}
+.slippers-shoe-img4 a {
+  background-color: white;
+  width: 26%;
+  margin-left: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.slippers-shoe-img4 a:hover {
+  margin-bottom: 5px;
+}
+.shoe-box-1 {
+  /* padding: 10px; */
+  line-height: 25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.slippers-shoe-box-1 p {
+  padding: 10px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.slippers-shoe-box-1:hover {
+  border: 1px solid black;
+}
+
+/* ------ section-6 ------ */
+
+.adidas-desc {
+  background-color: #f5f5e5;
+  min-height: 80vh;
+  padding: 50px 138px;
+  display: flex;
+  justify-content: space-between;
+  gap: 75px;
+}
+.desc-box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* height: 450px; */
+}
+.desc-box1 h1 {
+  font-size: 38px;
+  font-family: "Roboto", sans-serif;
+}
+.desc-box1 p {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.desc-box2 {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  /* height: 450px; */
+}
+.desc-box2 h1 {
+  font-size: 38px;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.para1-desc {
+  font-size: 15px;
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+}
+.para2-desc {
+  margin-top: 22px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------ Section-7 ------ */
+
+.offer-box {
+  background-color: #ede734;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 16vh;
+}
+.offer-box h1 {
+  font-size: 30px;
+}
+.offer-box button {
+  padding: 15px 16px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border: none;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+.offer-box button:hover {
+  color: #939393;
+}
+
+.company-desc-box {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 0;
+}
+.company-desc-box h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.company-desc-box ul {
+  list-style: none;
+}
+.company-desc-box li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333333;
+  cursor: pointer;
+}
+.company-desc-box li:hover {
+  text-decoration: underline;
+}
+.fa-brands {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #282c31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  height: 110px;
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 28%;
+}
+.footer-text p {
+  color: #d5c7c7;
+  font-size: 12px;
+  cursor: pointer;
+}
+.hr-line {
+  border-left: 1px solid #939393;
+  height: 16px;
+}
+.footer-cr p {
+  color: #d5c7c7;
+  font-size: 12px;
+}
+
+/* ------ Responsive Media Query ------ */
+
+@media screen and (max-width: 768px) {
+  .log-in-bar {
+    display: none;
+  }
+  .header ul {
+    display: none;
+  }
+  .icons-bar {
+    display: none;
+  }
+  #menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  #icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .product-offer-box {
+    display: block;
+  }
+  .product-offer-box img {
+    height: 100px;
+  }
+  .img-section-bcci .a1 {
+    padding: 10px 20px;
+    font-size: 12px;
+    margin-bottom: 12px;
+    margin-left: 50px;
+  }
+  .fa-arrow-right-long {
+    margin-left: 5px;
+  }
+  .img-section-bcci .a2 {
+    padding: 10px 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+  .category-types-1 {
+    display: block;
+    margin-top: 20px;
+  }
+  .category-types-2 {
+    display: block;
+  }
+  .category-section {
+    display: block;
+    height: 100%;
+    padding: 0 20px;
+  }
+  .category-section h2 {
+    font-size: 20px;
+  }
+  .category-1 {
+    width: 100%;
+  }
+  .category-1 h1 {
+    font-size: 35px;
+  }
+  .product-section {
+    padding: 0 20px;
+  }
+  .product-types {
+    overflow: auto;
+    gap: 20px;
+  }
+  .product-types::-webkit-scrollbar {
+    width: 100%;
+  }
+  .product-1 {
+    scroll-snap-align: start;
+  }
+  .product-1 img {
+    height: 350px;
+  }
+
+  .shoes-product-section {
+    padding: 0 20px;
+  }
+  .shoes-product-box {
+    overflow: auto;
+    gap: 15px;
+  }
+  .shoes-product-box::-webkit-scrollbar {
+    width: 50%;
+  }
+  .shoe-box-1 {
+    scroll-snap-align: start;
+  }
+
+  .shoes-cloth-product-section {
+    padding: 50px 20px;
+  }
+  .shoes-cloth-product-box {
+    overflow: auto;
+  }
+  .shoes-cloth-product-section h1 {
+    font-size: 35px;
+  }
+  .shoes-cloth-product-box::-webkit-scrollbar {
+    width: 10%;
+  }
+  .shoe-cloth-box-1 {
+    scroll-snap-align: start;
+  }
+
+  .slippers-shoes-product-section {
+    padding: 0 20px;
+  }
+  .slippers-shoes-product-box {
+    overflow: auto;
+    gap: 15px;
+  }
+  .slippers-shoes-product-box::-webkit-scrollbar {
+    width: 50%;
+  }
+  .slippers-shoe-box-1 {
+    scroll-snap-align: start;
+  }
+
+  .adidas-desc {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .desc-box1 {
+    gap: 18px;
+  }
+  .desc-box2 {
+    gap: 18px;
+  }
+  .para1-desc {
+    margin-top: 0px;
+  }
+  .para2-desc {
+    margin-top: 0px;
+  }
+
+  .offer-box {
+    flex-direction: column;
+    height: 40vh;
+  }
+  .company-desc-box {
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  footer {
+    gap: 18px;
+    height: 80px;
+  }
+  .footer-text {
+    width: 52%;
+  }
+}
